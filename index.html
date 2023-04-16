@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>radix</title>
+</head>
+<body>
+    <h3>by PersesTitan</h3>
+    <h4>10진수 2진수 변환</h4>
+    <hr>
+    <input id="result" class="result" type="number" autocomplete="off" placeholder="10진수 입력" onkeyup="change()">
+    <p><b>2진수 : </b><span id="value1"></span></p>
+    <p><b>8진수 : </b><span id="value2"></span></p>
+    <p><b>16진수 : </b><span id="value3"></span></p>
+    <hr>
+</body>
+<script>
+    const result = document.getElementById('result');
+    const v1 = document.getElementById("value1");
+    const v2 = document.getElementById("value2");
+    const v3 = document.getElementById("value3");
+    const change = () => {
+        const number = Number(result.value)
+        v1.innerText = number.toString(2);
+        v2.innerText = number.toString(8);
+        v3.innerText = number.toString(16);
+    }
+
+    result.addEventListener("change", change)
+</script>
+</html>
