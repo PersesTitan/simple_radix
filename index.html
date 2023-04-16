@@ -5,8 +5,11 @@
     <title>radix</title>
 </head>
 <body>
-    <h3>by PersesTitan</h3>
-    <h4>10진수 2진수 변환</h4>
+    <p>
+        <b>by PersesTitan</b>
+        <span onclick="alert('잘못누르신거죠?? ^^')" style="font-size: 0.8em; color: gray">신고</span>
+    </p>
+    <b>10진수 2진수 변환</b>
     <hr>
     <input id="result" class="result" type="number" autocomplete="off" placeholder="10진수 입력" onkeyup="change()">
     <p><b>2진수 : </b><span id="value1"></span></p>
@@ -25,7 +28,6 @@
         v2.innerText = number.toString(8);
         v3.innerText = number.toString(16);
     }
-
     result.addEventListener("change", change)
 </script>
 </html>
