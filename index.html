@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>radix</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
         .menu {
             font-size: 0.8em;
@@ -15,6 +16,16 @@
         .menu:hover {
             color: black;
             fill: black;
+        }
+
+        table, th, tr, td {
+            border : 1px solid black;
+            border-collapse : collapse;
+            padding: 5px;
+        }
+
+        table {
+            margin: 10px;
         }
     </style>
 </head>
@@ -48,9 +59,24 @@
     <b>10진수 2진수 변환</b>
     <hr>
     <input id="result" class="result" type="number" autocomplete="off" placeholder="10진수 입력" onkeyup="change()">
-    <p><b>2진수 : </b><span id="value1"></span></p>
-    <p><b>8진수 : </b><span id="value2"></span></p>
-    <p><b>16진수 : </b><span id="value3"></span></p>
+    <table>
+        <tr>
+            <th>2진수</th>
+            <td><span id="value1"></span></td>
+        </tr>
+        <tr>
+            <th>8진수</th>
+            <td><span id="value2"></span></td>
+        </tr>
+        <tr>
+            <th>16진수</th>
+            <td><span id="value3"></span></td>
+        </tr>
+    </table>
+
+<!--    <p><b>2진수 : </b><span id="value1"></span></p>-->
+<!--    <p><b>8진수 : </b><span id="value2"></span></p>-->
+<!--    <p><b>16진수 : </b><span id="value3"></span></p>-->
     <hr>
 </body>
 <script>
